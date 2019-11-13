@@ -23,7 +23,7 @@ jQuery(document).ready(function() {
 
         $('.player .title').text(title);
         $('.player .artist').text(artist);
-        $('.player .cover').css('background-image','url(data/' + cover+')');;
+        $('.player .cover').css('background-image','url(' + cover+')');;
 
         song = new Audio('data/' + url);
 
