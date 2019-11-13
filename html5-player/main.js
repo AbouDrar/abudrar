@@ -36,7 +36,7 @@ function initAudio(elem) {
     $('.player .title').text(title);
     $('.player .artist').text(artist);
     $('.player .cover').css('background-image','url(' + cover+')');;
-    song = new Audio('data/' + url);
+    song = new Audio(url);
     // timeupdate event listener
     song.addEventListener('timeupdate',function (){
         var curtime = parseInt(song.currentTime, 10);
