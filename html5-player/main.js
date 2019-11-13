@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
         $('.player .artist').text(artist);
         $('.player .cover').css('background-image','url(+cover+)');;
 
-        song = new Audio(+url+);
+        song = new Audio(url);
 
         // timeupdate event listener
         song.addEventListener('timeupdate',function (){
