@@ -21,7 +21,7 @@ volume.slider({
 // empty tracker slider
 tracker.slider({
     range: 'min',
-    min: 0, max: 10,
+    min: 0, max: 10,f
     start: function(event,ui) {},
     slide: function(event, ui) {
         song.currentTime = ui.value;
@@ -35,7 +35,7 @@ function initAudio(elem) {
     var artist = elem.attr('artist');
     $('.player .title').text(title);
     $('.player .artist').text(artist);
-    $('.player .cover').css('background-image','url(data/' + cover+')');;
+    $('.player .cover').css('background-image','url(' + cover+')');;
     song = new Audio('data/' + url);
     // timeupdate event listener
     song.addEventListener('timeupdate',function (){
