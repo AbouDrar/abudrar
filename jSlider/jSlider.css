@@ -12,6 +12,7 @@
 .jSlider {
 	position: relative;
 	height: auto;
+	max-height:500px;
 }
 
 .jSlider div, .jSlider span {
