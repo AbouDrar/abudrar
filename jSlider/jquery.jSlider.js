@@ -227,8 +227,8 @@
 			if (total <= 1 || this.data('initialized') == true) {
 				return;
 			}
-			if (!this.hasClass('jSlider')) {
-				this.addClass('jSlider');
+			if (!this.hasClass('ab_jSlider')) {
+				this.addClass('ab_jSlider');
 			}
 
 			/* SLIDER SETTINGS */
@@ -849,22 +849,22 @@
 		}
 
 		, 'getSlider': function() {
-			if (this.hasClass('jSlider')) {
+			if (this.hasClass('ab_jSlider')) {
 				return this;
 			}
-			return this.parents('.jSlider');
+			return this.parents('.ab_jSlider');
 		}
 	});
 
 	/* startup functions */
 	$(document).ready(function(evt) {
-		$('body .jSlider').each(function() {
+		$('body .ab_jSlider').each(function() {
 			$(this).sliderInit();
 		});
 	});
 
 	$(window).resize(function(evt) {
-		$('body .jSlider').each(function() {
+		$('body .ab_jSlider').each(function() {
 			$(this).sliderResized();
 		});
 	});
