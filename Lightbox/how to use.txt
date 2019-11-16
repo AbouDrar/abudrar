@@ -1,0 +1,5 @@
+in post add in html: <!--lightbox--> to call th plaguin.
+add images in this way:
+<a href="sample.jpg" class="lightBox" title="Caption Here">
+<img src="sample-thumb.jpg" alt="Image Alt">
+</a>
