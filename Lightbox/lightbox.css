@@ -33,7 +33,7 @@
 }
 
 #lightBox .image {
-	background: url(https://aboudrar.github.io/js/Lightbox/images/ajax-loader.gif) no-repeat center center #FFF;
+	background: url(https://aboudrar.github.io/abudrar/Lightbox/images/ajax-loader.gif) no-repeat center center #FFF;
 	display: block;
 	position: relative;
 	z-index: 1;
@@ -55,7 +55,7 @@
 }
 
 #lightBox #nextImage {
-	background: url(https://aboudrar.github.io/js/Lightbox/images/right-tab.png) no-repeat 100% center;
+	background: url(https://aboudrar.github.io/abudrar/Lightbox/images/right-tab.png) no-repeat 100% center;
 	background-position: calc(100% - 1em) center;
 	left: 66%;
 }
@@ -69,7 +69,7 @@
 }
 
 #lightBox #prevImage {
-	background: url(https://aboudrar.github.io/js/Lightbox/images/left-tab.png) no-repeat 0 center;
+	background: url(https://aboudrar.github.io/abudrar/Lightbox/images/left-tab.png) no-repeat 0 center;
 	background-position: calc(0% + 1em) center;
 	right: 66%;
 }
@@ -95,7 +95,7 @@
 }
 
 #closeBtn {
-	background: url(https://aboudrar.github.io/js/Lightbox/images/close.png) center no-repeat #FFF;
+	background: url(https://aboudrar.github.io/abudrar/Lightbox/images/close.png) center no-repeat #FFF;
 	border-radius: 50%;
 	height: 50px;
 	position: absolute;
