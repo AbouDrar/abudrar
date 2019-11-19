@@ -28,7 +28,7 @@
 #lightBox .container {
 	background: #FFF;
 	display: inline-block;
-	padding: 0.9em;
+	padding:3px;
 	position: relative;
 }
 
@@ -105,4 +105,9 @@
 	top: calc(-25px - 0.45em);
 	width: 50px;
 	z-index: 3;
+}
+@media screen and (max-height: 640px) {
+#lightBox {
+	align-items: unset;
+	}
 }
