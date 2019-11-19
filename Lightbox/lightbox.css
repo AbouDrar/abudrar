@@ -110,4 +110,5 @@
 #lightBox {
 	align-items: unset;
 	}
+	#closeBtn{display:none}
 }
