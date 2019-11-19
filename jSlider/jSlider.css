@@ -274,18 +274,25 @@ CONTROLLERS - PURE CSS 3 THEME
 	right: 15px;
 }
 /* responsive rules */
-@media (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
 }
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	.ab_jSlider .indicator span {
 		width: 7px;
 		height: 7px;
 		margin-left: 7px;
 	}
 }
-@media (max-width: 480px) {
+@media only screen and(max-width:640px) {
+.ab_jSlider {
+    min-height: auto;
+}
+}
+
+
+@media only screen and (max-width: 480px) {
 	.ab_jSlider .indicator span {
 		width: 5px;
 		height: 5px;
