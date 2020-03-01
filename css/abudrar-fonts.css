@@ -1,0 +1,50 @@
+/* arabic */
+@font-face{
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 400;
+src: local('Cairo'), local('Cairo-Regular'), url(https://fonts.gstatic.com/s/cairo/v4/SLXGc1nY6HkvalIkTpu0xg.woff2) format('woff2');
+unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin */
+@font-face{
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 400;
+src: local('Cairo'), local('Cairo-Regular'), url(https://fonts.gstatic.com/s/cairo/v4/SLXGc1nY6HkvalIhTps.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face{
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 700;
+src: local('Cairo Bold'), local('Cairo-Bold'), url(https://fonts.gstatic.com/s/cairo/v4/SLXLc1nY6Hkvalqaa46O59ZMaA.woff2) format('woff2');
+unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin */
+@font-face{
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 700;
+src: local('Cairo Bold'), local('Cairo-Bold'), url(https://fonts.gstatic.com/s/cairo/v4/SLXLc1nY6Hkvalqaa46L59Y.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face{
+font-family: Ammouri-Tifinagh;
+src: url('https://fonts.abudrar.com/Tifinagh/Ammouri-Tifinagh/Regular/Ammouri-Tifinagh-Regular.eot');
+src: url('https://fonts.abudrar.com/Tifinagh/Ammouri-Tifinagh/Regular/Ammouri-Tifinagh-Regular.eot?#iefix') format('embedded-opentype'),
+url('https://fonts.abudrar.com/Tifinagh/Ammouri-Tifinagh/Regular/Ammouri-Tifinagh-Regular.woff2') format('woff2'),
+url('https://fonts.abudrar.com/Tifinagh/Ammouri-Tifinagh/Regular/Ammouri-Tifinagh-Regular.woff') format('woff'),
+url('https://fonts.abudrar.com/Tifinagh/Ammouri-Tifinagh/Regular/Ammouri-Tifinagh-Regular.ttf') format('truetype'),
+url('https://fonts.abudrar.com/Tifinagh/Ammouri-Tifinagh/Regular/Ammouri-Tifinagh-Regular.svg#Ammouri-Tifinagh-Regular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+font-family: abicons;
+src: url('https://fonts.abudrar.com/abIcons/abIcons.woff2') format('woff2'),
+url('https://fonts.abudrar.com/abIcons/abIcons.svg#abiconsregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
