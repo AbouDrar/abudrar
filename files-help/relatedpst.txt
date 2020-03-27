@@ -19,7 +19,7 @@ just aftter it place this code :
 
 and just BEFORE it place this code: 
 
-<b:include cond='data:blog.isPost' name='relatedPostsMobile'/>
+<b:include cond='data:view.isPost' name='relatedPostsMobile'/>
 
 
 ========= > 3 : search for this line :
