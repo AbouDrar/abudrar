@@ -7,12 +7,14 @@
     <button class="download-file" data-url="http://localhost/js/download.zip">Download Now</button>
 
     <script type="text/javascript">
+    
     Array.from(document.getElementsByClassName('download-file')).forEach((button) => {
       button.addEventListener('click', (e)=>{
-        e.preventDefault();
-        //now you get the data from the clicked button:
-       var thelink = e.target.getAttribute('data-url');  
+        e.preventDefault(); 
       });
+      
+              //now you get the data from the clicked button:
+              var thelink = e.target.getAttribute('data-url'); 
     });
     // now lets store the data in localstorage:
     if (typeof(Storage) !== "undefined") {
@@ -21,7 +23,8 @@
     } else {
       document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
     }
-    </script> 
+    </script>
+     
 </body>
 </html>
   
