@@ -13,9 +13,7 @@
         e.preventDefault();
           //now you get the data from the clicked button:
           var thelink = e.target.getAttribute('data-url'); 
-      });
-
- // now lets store the data in localstorage:
+          // now lets store the data in localstorage:
  if (typeof(Storage) !== "undefined") {
       // Store
       localStorage.setItem("TheDwnloadLink", thelink);
@@ -24,6 +22,7 @@
     }
 
     });
+      });
    
     </script>
      
