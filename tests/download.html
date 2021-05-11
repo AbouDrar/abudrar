@@ -8,7 +8,7 @@
 <div id="countdown_seconds"></div>
   <script type="text/javascript">  
     // Total seconds to wait
-    var seconds = 10;
+    var seconds = 15;
       function download_timer() {
         seconds = seconds - 1;
         if (seconds < 0) {
@@ -19,6 +19,7 @@
        if(mainLink != null){
             window.location = mainLink;
        }else{
+           //if there is no link in local storage:
            document.getElementById("countdown_seconds").innerHTML = "there is no link! you should click a downloadable link";
        }
            
