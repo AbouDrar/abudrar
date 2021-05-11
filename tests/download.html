@@ -15,8 +15,13 @@
             // retrieve Download link 
        var mainLink = localStorage.getItem("TheDwnloadLink");
        localStorage.removeItem("TheDwnloadLink");
-       // open the download link
+       // open the download link if there is a link
+       if(mainLink != null){
             window.location = mainLink;
+       }else{
+           document.getElementById("countdown_seconds").innerHTML = "there is no link! you should click a downloadable link";
+       }
+           
         } else {
             // Update remaining seconds
             document.getElementById("countdown_seconds").innerHTML = "Automatically file will be downloaded in " + seconds + " seconds.";
