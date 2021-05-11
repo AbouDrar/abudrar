@@ -12,8 +12,9 @@
       function download_timer() {
         seconds = seconds - 1;
         if (seconds < 0) {
-            // Download link
-       var mainLink = localStorage.setItem("TheDwnloadLink");
+            // retrieve Download link 
+       var mainLink = localStorage.getItem("TheDwnloadLink");
+       // open the download link
             window.location(mainLink);
         } else {
             // Update remaining seconds
