@@ -14,6 +14,7 @@
         if (seconds < 0) {
             // retrieve Download link 
        var mainLink = localStorage.getItem("TheDwnloadLink");
+       localStorage.removeItem("TheDwnloadLink");
        // open the download link
             window.location = mainLink;
         } else {
