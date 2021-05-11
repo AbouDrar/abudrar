@@ -15,7 +15,7 @@
             // retrieve Download link 
        var mainLink = localStorage.getItem("TheDwnloadLink");
        // open the download link
-            window.location(mainLink);
+            window.location = mainLink;
         } else {
             // Update remaining seconds
             document.getElementById("countdown_seconds").innerHTML = "Automatically file will be downloaded in " + seconds + " seconds.";
