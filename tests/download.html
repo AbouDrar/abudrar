@@ -4,6 +4,25 @@
     <title>download page</title>
 </head>
 <body>
-hello people of the wordl !
+<button onClick=download_timer()>download now!</button>
+<div id="countdown_seconds"></div>
+  <script type="text/javascript">  
+    // Total seconds to wait
+    var seconds = 10;
+      function download_timer() {
+
+        seconds = seconds - 1;
+
+        if (seconds < 0) {
+            // Download link
+            window.location = "abudrar.com";
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown_seconds").innerHTML = "Automatically file will be downloaded in " + seconds + " seconds.";
+            // Countdown wait time is 1 second
+            window.setTimeout("download_timer()", 1000);
+        }
+    }
+    </script>
 </body>
 </html>
