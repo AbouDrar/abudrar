@@ -4,13 +4,16 @@
     <title>hi welcome to this page</title>
 </head>
 <body>
-    <button class="download-file" data-url="http://localhost/js/download.zip">Download Now</button>
-<button class="download-file" data-url="http://abudrar/js/sssssssssss.zip">Download Now</button>
-    <script type="text/javascript">
-    
+    <button class="download-file" data-site="http://mediafire.com" data-url="abudrar.com/js/download.zip">Download Now</button>
+
+    <script type="text/javascript">  
     Array.from(document.getElementsByClassName('download-file')).forEach((button) => {
       button.addEventListener('click', (e)=>{
         e.preventDefault();
+        var dddSite = e.target.getAttribute('data-site');
+        var kkk = e.target.getAttribute('data-url');
+        var newwjj = kkk.substring(11);
+        var iyy = dddSite+newwjj;
           //now you get the data from the clicked button:
           var thelink = e.target.getAttribute('data-url'); 
           // now lets store the data in localstorage:
@@ -24,8 +27,10 @@
     var downloadpage = "/tests/download.html"
     window.location = downloadpage;
     });
+
       });
     </script>
      
 </body>
 </html>
+  
