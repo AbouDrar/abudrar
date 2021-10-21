@@ -14,12 +14,12 @@ function download_timer() {
             window.location = TheFullDownloadLink;
        }else{
            //if there is no link in local storage:
-           document.getElementById("countdown_seconds").innerHTML = "الرابط لم يعد يعمل !";
+           document.getElementById("Countdown").innerHTML = "الرابط لم يعد يعمل !";
        }
            
         } else {
             // Update remaining seconds
-            document.getElementById("countdown_seconds").innerHTML = "سيتم توجيهك الى رابط التحميل بعد " + seconds + " ثانية.";
+            document.getElementById("Countdown").innerHTML = "سيتم توجيهك الى رابط التحميل بعد " + seconds + " ثانية.";
             // Countdown wait time is 1 second
             window.setTimeout("download_timer()", 1000);
         }
