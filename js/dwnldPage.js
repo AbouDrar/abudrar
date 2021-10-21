@@ -13,13 +13,13 @@ function download_timer() {
             window.location = TheFullDownloadLink;
        }else{
            //if there is no link in local storage:
-           document.getElementById("Countdown").innerHTML = "there is no link! you should click a downloadable link";
+           document.getElementById("Countdown").innerHTML = "لا يعمل هذا الرابط";
        }
            
         } else {
             // Update remaining seconds
-            document.getElementById("Countdown").innerHTML = "Automatically file will be downloaded in " +seconds+ " seconds.";
+            document.getElementById("Countdown").innerHTML = "سيتم توجيهك لصفحة التحميل بعد " +seconds+ " ثانية.";
             // Countdown wait time is 1 second
-            window.setTimeout("download_timer()", 1000);
+            window.setTimeout(download_timer(), 1000);
         }
     }
