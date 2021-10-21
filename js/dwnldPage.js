@@ -20,7 +20,7 @@ function download_timer(){
             // Update remaining seconds
             document.getElementById("Countdown").innerHTML = "سيتم توجيهك لصفحة التحميل بعد " +seconds+ " ثانية.";
             // Countdown wait time is 1 second
-            window.setTimeout(download_timer(), 1000);
+            window.setTimeout( "download_timer()" , 1000);
         }
    }
 
