@@ -6,6 +6,16 @@ function download_timer(){
 			// get the query string part from url
 			var query = window.location.search;
 			var urlParams = new URLSearchParams( query ); // object of the parameters
+			
+			for (var theParameter in urlParams) {
+				if ( urlParams.hasOwnProperty( theParameter ) ) {
+					/**** if(){
+						
+					} **/
+					
+        console.log(theParameter + " ---> " + urlParams[theParameter]);
+    }
+}
 			var website = urlParams.get( 'website' );
 			var slug = urlParams.get( 'slug' );
 			var newSlug = slug.substring( 11 ); //delete the first 11 characters of the slug.
