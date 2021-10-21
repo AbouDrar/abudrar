@@ -1,6 +1,5 @@
-//<![CDATA[
 function download_timer() {
-	var seconds = 15; // Total seconds to wait
+		var seconds = 15; // Total seconds to wait
         seconds = seconds - 1;
         if (seconds < 0) {
 	   // get the query string part from url
@@ -19,9 +18,8 @@ function download_timer() {
            
         } else {
             // Update remaining seconds
-            document.getElementById("Countdown").innerHTML = "Automatically file will be downloaded in " + seconds + " seconds.";
+            document.getElementById("Countdown").innerHTML = "Automatically file will be downloaded in " +seconds+ " seconds.";
             // Countdown wait time is 1 second
             window.setTimeout("download_timer()", 1000);
         }
     }
-//<![CDATA[
