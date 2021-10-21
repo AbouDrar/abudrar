@@ -1,4 +1,25 @@
-//<![CDATA[
-//script for downloading page
-var _0x4a39=['40013mPCtEy','klik14','26WQWuew','getElementById','7899hzGvPM','style','862ODzGoD','1bpPrjQ','707DFwBsl','TheDwnloadLink','536256WzqloK','background','getItem','سيتم\x20توجيهك\x20إلى\x20صفحة\x20التحميل\x20بعد\x20<span\x20class=\x27seconds\x27>','1MwFwza','download_timer()','141179ILPnZr','Countdown','ليس\x20هناك\x20أي\x20رابط\x20!يرجى\x20إعادة\x20الضغط\x20على\x20الرابط\x20في\x20صفحة\x20الموضوع.','innerHTML','setTimeout','14116OIlDGH','location','removeItem','</span>\x20ثانية.','121TBToss','408643jaEejE','#9ff6ff'];(function(_0x30fac7,_0x5914fb){var _0x80ce8c=_0x2369;while(!![]){try{var _0x537ce5=-parseInt(_0x80ce8c(0x7c))*-parseInt(_0x80ce8c(0x75))+-parseInt(_0x80ce8c(0x86))*parseInt(_0x80ce8c(0x76))+parseInt(_0x80ce8c(0x7e))*parseInt(_0x80ce8c(0x80))+parseInt(_0x80ce8c(0x88))*-parseInt(_0x80ce8c(0x7f))+parseInt(_0x80ce8c(0x8d))+parseInt(_0x80ce8c(0x82))+-parseInt(_0x80ce8c(0x7a))*parseInt(_0x80ce8c(0x78));if(_0x537ce5===_0x5914fb)break;else _0x30fac7['push'](_0x30fac7['shift']());}catch(_0xa10dc){_0x30fac7['push'](_0x30fac7['shift']());}}}(_0x4a39,0x80471));function _0x2369(_0x513304,_0x52cedf){_0x513304=_0x513304-0x73;var _0x4a391a=_0x4a39[_0x513304];return _0x4a391a;}var seconds=0xc;function download_timer(){var _0x1ed432=_0x2369;seconds=seconds-0x1,document[_0x1ed432(0x7b)](_0x1ed432(0x79))[_0x1ed432(0x7d)][_0x1ed432(0x83)]='#6bff81';if(seconds<0x0){var _0x6d289e=localStorage[_0x1ed432(0x84)](_0x1ed432(0x81));localStorage[_0x1ed432(0x73)](_0x1ed432(0x81)),_0x6d289e!=null?window[_0x1ed432(0x8e)]=_0x6d289e:(document[_0x1ed432(0x7b)](_0x1ed432(0x79))[_0x1ed432(0x7d)][_0x1ed432(0x83)]=_0x1ed432(0x77),document['getElementById'](_0x1ed432(0x89))[_0x1ed432(0x8b)]=_0x1ed432(0x8a));}else document[_0x1ed432(0x7b)](_0x1ed432(0x89))[_0x1ed432(0x8b)]=_0x1ed432(0x85)+seconds+_0x1ed432(0x74),window[_0x1ed432(0x8c)](_0x1ed432(0x87),0x3e8);}
-//]]>
+function download_timer() {
+		var seconds = 15; // Total seconds to wait
+        seconds = seconds - 1;
+        if (seconds < 0) {
+	   // get the query string part from url
+	   var query = window.location.search;
+	   var urlParams = new URLSearchParams( query ); // object of the parameters
+	   var website = urlParams.get('website');
+	   var slug = urlParams.get('website');
+	   var newSlug = slug.substring(11); //delete the first 11 characters of the slug.
+	   var TheFullDownloadLink = website + newSlug;
+       if(mainLink != null){
+            window.location = TheFullDownloadLink;
+       }else{
+           //if there is no link in local storage:
+           document.getElementById("countdown_seconds").innerHTML = "الرابط لم يعد يعمل !";
+       }
+           
+        } else {
+            // Update remaining seconds
+            document.getElementById("countdown_seconds").innerHTML = "سيتم توجيهك الى رابط التحميل بعد " + seconds + " ثانية.";
+            // Countdown wait time is 1 second
+            window.setTimeout("download_timer()", 1000);
+        }
+    }
