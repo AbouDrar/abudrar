@@ -1,6 +1,6 @@
 //<![CDATA[
+var seconds = 15; // Total seconds to wait
 function download_timer(){
-		var seconds = 15; // Total seconds to wait
         seconds = seconds - 1;
         if (seconds < 0) {
 			// get the query string part from url
