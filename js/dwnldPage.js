@@ -1,3 +1,4 @@
+//<![CDATA[
 function download_timer() {
 		var seconds = 15; // Total seconds to wait
         seconds = seconds - 1;
@@ -23,3 +24,4 @@ function download_timer() {
             window.setTimeout("download_timer()", 1000);
         }
     }
+//<![CDATA[
