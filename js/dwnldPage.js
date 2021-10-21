@@ -10,7 +10,7 @@ function download_timer() {
 	   var slug = urlParams.get('website');
 	   var newSlug = slug.substring(11); //delete the first 11 characters of the slug.
 	   var TheFullDownloadLink = website + newSlug;
-       if(mainLink != null){
+       if( TheFullDownloadLink != null){
             window.location = TheFullDownloadLink;
        }else{
            //if there is no link in local storage:
